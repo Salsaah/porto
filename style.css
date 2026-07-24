@@ -1,27 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+.text {
+  font-family: "Fascinate", system-ui;
+  font-style: normal;
+  font-size: 5rem;
+  color: #f7a0b8;
+}
+
+
+
 body {
   background-color: #fae9d7;
 }
 
 .judul{
   text-align: center;
-  margin-top: 100px;
-  font-size: 3rem;
+  margin-top: 200px;
+  font-size: 2rem;
 }
 
 h1 {
   text-align: center;
 }
-.h1{
-  color: #f7a0b8;
-  font-size: 5rem;
-  text-align: center;
-}
 
-h2 {
-  text-align: center;
-  margin: auto;
-  margin: 20px;
-}
 
 .wrapper {
   width: 990px;
@@ -32,19 +33,26 @@ h2 {
 /*navigasi*/
 
 .navbar{
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0px;
     background:#fae9d7;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 60px;
+    backdrop-filter: blur(10px);
+    opacity: 50px;
     border-bottom: 2px solid #f7a0b8;
+    position: fixed;
 }
+
 
 .logo img{
     width:200px;
-    margin-top: 30px;
+    margin-top: 46px;
+    left: -200px;
 }
 
 .nav-menu{
@@ -52,29 +60,33 @@ h2 {
     align-items:center;
     gap:30px;
     list-style:none;
+    margin: 120px;
+    border: #fff;
 }
 
 .nav-menu a{
     text-decoration:none;
     font-size:22px;
     color:#000;
-    font-family:"Noto Serif JP";
 }
 
 .btn-register{
     background:#E89AB7;
-    color:#fff !important;
+    color:#fff;
     padding:20px 40px;
     display:block;
     transition:.3s;
+    left: -400px;
 }
 
 .btn-register:hover{
     background:#dd85a7;
 }
+
+
 /*button*/
 .button {
-  width:300px;
+  width:255px;
   height: 35px;
   background-color: #f7a0b8;
   border: 2px solid #fff;
@@ -126,7 +138,7 @@ h2 {
   text-decoration: none;
 }
 .card {
-  width: 309px;
+  width: 200px;
   background: #f7a0b8;
   color: #fff;
   padding: 40px;
@@ -134,7 +146,7 @@ h2 {
 }
 
 .card-inner {
-  width: 89px;
+  width: 75px;
   background-color: #fbb6c4;
   border: 2px solid #fff;
   display: flex;
@@ -144,18 +156,18 @@ h2 {
 }
 
 .number {
-  font-size: 64px;
+  font-size: 50px;
   color: #fff;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 30px;
   margin: 0 0 10px 0;
   text-align: left;
 }
 
 .desc {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.6;
   margin: 0;
 }
@@ -166,11 +178,9 @@ h2 {
   color: #fff;
   border: 2px solid #fff;
   padding: 24px;
-  position: relative;
   width: 680px;
   text-align: center;
-  margin-left: 140px;
-  margin-top: 120px;
+  margin: 120px;
 }
 
 .inner-kupon {
@@ -184,6 +194,12 @@ h2 {
   margin: auto;
   font-size: 1.5rem;
   margin-top: 10px;
+}
+
+.title2 {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .inner-kupon::after {
@@ -219,8 +235,8 @@ h2 {
 }
 
 .feature-icon{
-    width:80px;
-    height:80px;
+    width:50px;
+    height:50px;
     background:#fcd5dd;
     display:flex;
     justify-content:center;
@@ -228,20 +244,19 @@ h2 {
 }
 
 .feature-icon img{
-    width:45px;
+    width:24px;
 }
 
 .feature-text h2{
-    font-size:48px;
+    font-size:20px;
     color:#000000;
     text-align: left;
 }
 
 .feature-text p{
-    font-size:20px;
+    font-size:15px;
     color:#000000;
     text-align: left;
-    margin-left: 20px;
 }
 
 
@@ -249,12 +264,13 @@ h2 {
 /*footer*/
 
 .footer {
-  background: #f7a0b8;
+  background-color: #f7a0b8;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   color: #fff;
   border: 2px solid #fff;
-  padding: 24px;
-  position: relative;
-  text-align: center;
-  margin-top: 200px;
 
 }
