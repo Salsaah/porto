@@ -101,6 +101,11 @@ h1 {
   text-align: center;
 }
 
+.button a{
+    color:#fff;
+    text-decoration:none; 
+}
+
 .buton::after {
   content: "";
   position: absolute;
@@ -196,10 +201,16 @@ h1 {
   margin-top: 10px;
 }
 
+.inner-kupon a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .title2 {
   font-size: 30px;
   margin: 0 0 10px 0;
   text-align: center;
+  text-decoration: none;
 }
 
 .inner-kupon::after {
